@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Tajawal?selection.family=Tajawal:wght@200;300;400;500;700;800;900">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!------------------Header Section------------------>
+    <section class="Eve-header">
+        <nav>
+            <a href="index.html"><img src="images_img/Logo.jpg" alt="SVU logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                     <li>
+                       <button id="theme-toggle" class="theme-switch"><i class="fa fa-eye"></i></button> 
+                    </li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-Box">
+            <h1>Syrian Virtual University</h1>
+            <p>Welcome To Our University!</p><p>Explore our courses and Activities</p>
+            <a href="index.html" class="SVU">Return To Home Paige</a>
+        </div>
+    </section>
+
+    <!-------------------------Search Bar------------------------------------>
+    <div class="container">
+        <h3>Live Search Bar</h3>
+        <div class="search-Box">
+            <input type="text" id="search" placeholder="Search items">
+
+        </div>
+
+    </div>
+    
+    
+     <!----------------- Events Section --->
+    <section class="Events">
+        <h1>Our Events</h1>
+        <p>We have many events and activities, you can check them out here!</p>
+
+        <div class="row">
+            <div class="Events-col">
+                <img src="images_img/web_developer.jpeg" alt="">
+             <h3>Web Development Workshop</h3>
+             <p>Join us for an exciting workshop on web development</p>
+             <div class="det">
+                 <ol class="event-ol">
+                        <li class="Tybe">Tech</li>
+                        <li>Date: May 15, 2026</li>
+                        <li>Time: 2:00 PM - 5:00 PM</li>
+                        <li>Location: Room 101</li>
+                 </ol>
+             </div>
+             <a href="event.html#webdev" class="details">Details</a>
+            </div>
+
+
+            <div class="Events-col">  
+                <img src="images_img/library 2.jpg" alt="">
+                <h3>Book Lovers</h3>
+                <p>Join us at the Book Lovers Event at the Library </p>
+            <div class="det">
+                 <ol class="event-ol">
+                        <li class="Tybe">Arts & Literature</li>
+                        <li>Date: may 13, 2026</li>
+                        <li>Time: 10:00 AM - 12:00 PM</li>
+                        <li>Location:  10:00 AM - 12:00 PM</li>
+                 </ol>
+             </div>
+             <a href="event.html#booklovers" class="details">Details</a>
+            </div>
+
+          <div class="Events-col">
+                <img src="images_img/graduation.jpg" alt="">
+                <h3> Graduation party</h3>
+                <p>Congratulations to our graduating students</p>
+                <div class="det">
+                 <ol class="event-ol">
+                        <li class="Tybe">Special</li>
+                        <li>Date: may 17, 2026</li>
+                        <li>Time: 3:00 PM - 6:00 PM</li>
+                        <li>Location: Auditorium</li>
+                 </ol>
+             </div>
+             <a href="event.html#grad" class="details">Details</a>
+        </div>
+
+       </div>
+
+
+        <div class="row">
+            <div class="Events-col">
+                <img src="images_img/Chess.jpg" alt="">
+             <h3>Chess tournament</h3>
+             <p>Join us for an exciting chess tournament!</p>
+                <div class="det">
+                    <ol class="event-ol">
+                        <li class="Tybe">Sport</li>
+                        <li>Date: may 15, 2026</li>
+                        <li>Time: 10:00 AM - 12:00 PM</li>
+                        <li>Location: Chess Club</li>
+                    </ol>
+                </div>
+                <a href="event.html#chess" class="details">Details</a>
+            </div>
+
+
+            <div class="Events-col"> 
+                <img src="images_img/theater.jpg" alt=""> 
+                <h3> Theater</h3>
+                <p>Join us for an exciting theater performance!</p>
+                <div class="det">
+                 <ol class="event-ol">
+                        <li class="Tybe">Arts & Literature</li>
+                        <li>Date: may 17, 2026</li>
+                        <li>Time: 10:00 AM - 12:00 PM</li>
+                        <li>Location: Theater </li>
+                 </ol>
+             </div>
+                <a href="event.html#Theater" class="details">Details</a>
+            </div>
+
+            <div class="Events-col">
+                <img src="images_img/cinema.jpg" alt="">
+                <h3> Movies</h3>
+                <p>Don't miss the new movie screening!</p>
+                <div class="det">
+                 <ol class="event-ol">
+                        <li class="Tybe">Arts & Literature</li>
+                        <li>Date: may 25, 2023</li>
+                        <li>Time: 11:00 AM - 1:00 PM</li>
+                        <li>Location: Cinema</li>
+                 </ol>
+             </div>
+                <a href="event.html#movies" class="details">Details</a>
+            </div>
+
+            
+
+        </div>
+
+        <div class="row">
+            <div class="Events-col">
+                <img id="Ropot" src="images_img/Robotics_010.jpg" alt="">
+             <h3>Robotics</h3>
+             <p>Join us for an exciting workshop on robotics!</p>
+                <div class="det">
+                    <ol class="event-ol">
+                        <li class="Tybe">Tech</li>
+                        <li>Date: may 14, 2023</li>
+                        <li>Time: 4:00 AM - 6:00 PM</li>
+                        <li>Location: Robotics Lab</li>
+                    </ol>
+                </div>
+                <a href="event.html#robot" class="details">Details</a>
+            </div>
+
+
+            <div class="Events-col"> 
+                <img src="images_img/consert.jpg" alt=""> 
+                <h3>Classic music</h3>
+                <p>Join us for a wonderful classical music concert!</p>
+                <div class="det">
+                 <ol class="event-ol">
+                        <li class="Tybe">Arts & Literature</li>
+                        <li>Date: may 18, 2023</li>
+                        <li>Time: 11:00 AM - 2:00 PM</li>
+                        <li>Location: Theater</li>
+                 </ol>
+                </div>
+                <a href="event.html#music" class="details">Details</a>
+            </div>
+
+            <div class="Events-col">
+                <img src="images_img/basketball.png" alt="">
+                <h3> Basketball</h3>
+                <p>Cheer for our basketball team!</p>
+                <div class="det">
+                 <ol class="event-ol">
+                        <li class="Tybe">Sport</li>
+                        <li>Date: may 18, 2023</li>
+                        <li>Time: 2:00 AM - 5:00 PM</li>
+                        <li>Location: Gymnasium</li>
+                 </ol>
+                </div>
+                <a href="event.html#basket" class="details">Details</a>
+            </div>
+
+           
+        </div>
+
+
+
+
+       
+
+
+    </section>
+
+
+    <!---------------------Footer------------------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are a virtual university that provides online education to students all over the world. <br>
+            We offer a wide range of courses and programs in various fields of study.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by SVU Team</p>
+
+   
+
+     <!------------- JavaScript for Mobile Menu ------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    
+    
+    <script>
+        const searchInput = document.getElementById("search");
+    const eventCards = document.querySelectorAll('.Events-col');
+
+    searchInput.addEventListener('input', () => {
+    const term = searchInput.value.trim().toLowerCase();
+
+    eventCards.forEach(card => {
+    const searchText = card.textContent.toLowerCase();
+    card.style.display = searchText.includes(term) ? '' : 'none';
+  });
+});
+    </script>
+
+    <script>
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme === 'dark-mode') {
+            document.body.classList.add('dark-mode');
+            themeToggle.innerHTML = '<i class="fa fa-toggle-on"></i>';
+        } else {
+            themeToggle.innerHTML = '<i class="fa fa-toggle-off"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            let theme = 'light';
+            if (document.body.classList.contains('dark-mode')) {
+                theme = 'dark-mode';
+                themeToggle.innerHTML = '<i class="fa fa-toggle-on"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fa fa-toggle-off"></i>';
+            }
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+    
+
+   
+</body>
+</html>

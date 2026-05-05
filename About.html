@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVU website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Tajawal?selection.family=Tajawal:wght@200;300;400;500;700;800;900">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!------------------Header Section------------------>
+    <section class="sup-header">
+        <nav>
+            <a href="index.html"><img src="images_img/Logo.jpg" alt="SVU logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Events.html">Events</a></li>
+                     <li>
+                       <button id="theme-toggle" class="theme-switch"><i class="fa fa-eye"></i></button> 
+                    </li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+       
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>SVU the Best Virtual University</h1>
+                <h4>SVU is the leading virtual university offering high-quality online education to Syrian students </h4>
+                    <p>Welcome to our virtual university! We are dedicated to providing high-quality online education to students around Syria and the globe.
+                     Our mission is to make education accessible and affordable for everyone.</p>
+
+                     <a href="" class="SVU color-SVU">Explore Now</a>
+            </div>
+
+            <div class="about-col">
+                <img src="images_img/about.jpg" alt="">
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="about-col team">
+               <img src="images_img/guy3.jpg" alt="">
+                <h3>Nour Tamr Badran</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Iusto rem consequatur unde rerum deleniti eos fugit quas laboriosam omnis earum!
+                     Odit in cupiditate ducimus dignissimos libero a necessitatibus architecto maxime! </p>
+            </div>
+
+             <div class="about-col team">
+               <img src="images_img/guy4.jpg" alt="">
+                <h3> Mohammed Othman</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Iusto rem consequatur unde rerum deleniti eos fugit quas laboriosam omnis earum!
+                     Odit in cupiditate ducimus dignissimos libero a necessitatibus architecto maxime! </p>
+            </div>
+
+             <div class="about-col team">
+               <img src="images_img/guy1.jpg" alt="">
+                <h3>FLan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Iusto rem consequatur unde rerum deleniti eos fugit quas laboriosam omnis earum!
+                     Odit in cupiditate ducimus dignissimos libero a necessitatibus architecto maxime! </p>
+            </div>
+
+
+        </div>
+    </section>
+    
+   
+    
+    
+    
+    
+
+
+
+    <!---------------------Footer------------------>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are a virtual university that provides online education to students all over the world. <br>
+            We offer a wide range of courses and programs in various fields of study.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by SVU Team</p>
+
+
+
+
+    </section>
+
+    <!------------- JavaScript for Mobile Menu ------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme === 'dark-mode') {
+            document.body.classList.add('dark-mode');
+            themeToggle.innerHTML = '<i class="fa fa-toggle-on"></i>';
+        } else {
+            themeToggle.innerHTML = '<i class="fa fa-toggle-off"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            let theme = 'light';
+            if (document.body.classList.contains('dark-mode')) {
+                theme = 'dark-mode';
+                themeToggle.innerHTML = '<i class="fa fa-toggle-on"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fa fa-toggle-off"></i>';
+            }
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+
+
+        
+
+</body>
+</html>
